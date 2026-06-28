@@ -1,5 +1,3 @@
-# job-application-tracker
-Automated job-application tracker with one-click capture, follow-up reminders, and AI-drafted emails (Make.com + Gemini).
 # Job Application Tracker — Automated Capture, Follow-up Reminders & AI Drafting
 
 An end-to-end automation that captures job applications with one click, reminds me
