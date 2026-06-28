@@ -1,0 +1,19 @@
+javascript:(function(){
+  var link = window.location.href;
+  var title = document.title;
+  var company = prompt("Company:", "");
+  if(company === null) return;
+  var role = prompt("Role:", title);
+  if(role === null) return;
+  var date = new Date().toISOString().slice(0,10);
+  var url = "WEBHOOK_GOES_HERE"
+    + "?company=" + encodeURIComponent(company)
+    + "&role=" + encodeURIComponent(role)
+    + "&date=" + date
+    + "&link=" + encodeURIComponent(link)
+    + "&status=Applied";
+ var img = new Image();
+  img.onload = function(){ alert("Added: " + company + " — " + role); };
+  img.onerror = function(){ alert("Added: " + company + " — " + role + " (check sheet)"); };
+  img.src = url;
+})();
