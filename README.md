@@ -8,7 +8,7 @@ using an LLM — built with Make.com, Google Sheets, and the Gemini API.
 > hands-off system that captures applications as I browse and nudges me — with a
 > ready-to-send draft — when one needs a follow-up.
 
-![Scenario canvas](images/ajt-full-canvas-makecom.png)
+![Scenario canvas](images/ajt-full_canvas_makecom.png)
 
 ## The problem
 
@@ -75,7 +75,7 @@ to read a response, routing the request through `new Image().src` slips it throu
 door the site leaves open — the same "tracking pixel" technique analytics tools have
 used for years.
 
-![Scenario canvas](images/ajt-bookmarklet-ex.png)
+![Scenario canvas](images/ajt-bookmarklet_ex.png)
 
 ### 2. The daily reminder: filtering for what actually needs attention
 
@@ -100,7 +100,7 @@ then tests it against `addDays(now; -7)` — the timestamp for exactly one week 
 Getting the format string to match the stored format exactly (including a European
 DD/MM/YYYY layout) was the single most common failure point while building this.
 
-![Scenario canvas](images/ajt-filter-panel-makecom.png)
+![Scenario canvas](images/ajt-filter_panel_makecom.png)
 
 ### 3. AI-drafted follow-ups
 
@@ -115,7 +115,7 @@ A **text aggregator** then assembles each application and its draft into one rea
 block, and the digest is emailed to me. On days when nothing is going cold, a
 not-empty guard suppresses the email entirely, so quiet days stay quiet.
 
-![Scenario canvas](images/ajt-email-ex.png)
+![Scenario canvas](images/ajt-email_ex.png)
 
 ---
 
